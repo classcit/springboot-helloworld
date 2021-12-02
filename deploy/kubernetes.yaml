@@ -37,7 +37,7 @@ spec:
       containers:
       - name: springboot-helloworld
         image: registry.cn-hangzhou.aliyuncs.com/51eshare/springboot-helloworld:0.0.1
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
           name: server
