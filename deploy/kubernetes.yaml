@@ -36,17 +36,17 @@ spec:
     spec:
       containers:
       - name: springboot-helloworld
-        image: 10.71.164.28:5000/springboot-helloworld:0.0.1
+        image: registry.cn-hangzhou.aliyuncs.com/51eshare/springboot-helloworld:0.0.1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
           name: server
         - containerPort: 8081
           name: management
-        resources: 
-          limits:
-            cpu: 1000m
-            memory: 512Mi
-          requests:
-            cpu: 500m
-            memory: 256Mi
+        #resources: 
+        #  limits:
+        #    cpu: 1000m
+        #    memory: 512Mi
+        #  requests:
+        #    cpu: 500m
+        #    memory: 256Mi
