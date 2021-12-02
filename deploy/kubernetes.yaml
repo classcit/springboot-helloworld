@@ -34,6 +34,8 @@ spec:
       labels:
         app: springboot-helloworld
     spec:
+      imagePullSecrets:
+      - name: docker-image-secret
       containers:
       - name: springboot-helloworld
         image: <imagename>
